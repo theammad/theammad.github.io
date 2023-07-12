@@ -1,0 +1,74 @@
+/*
+Zerotheme.com | Free Html5 Responsive Templates
+magric - A Single Grid System for Responsive Design
+Author: Kimmy
+Version : 3.0
+Author URI: https://www.zerotheme.com/
+*/
+/* -------------------------------------------- */
+/* ------------------Grid System--------------- */ 
+.magric{ width: 1000px; position: relative; margin: 0 auto; padding: 0px;}
+.magric:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.magric .f-right{float: right!important;}
+.magric .f-left{float: left!important;}
+
+.magric .row{}
+.magric .row:before,.row:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+.magric .row:after{clear: both; }
+.magric .row{zoom: 1;}
+
+.magric .wrap-col{margin:10px;}
+
+.magric .col-1-2, .magric .col-1-3, .magric .col-2-3, .magric .col-1-4, .magric .col-2-4, .magric .col-3-4, .magric .col-1-5, .magric .col-2-5, .magric .col-3-5, .magric .col-4-5, .magric .col-1-6, .magric .col-2-6, .magric .col-3-6, .magric .col-4-6, .magric .col-5-6{float:left; display: inline-block;}
+
+.magric .col-full{width:100%;}
+
+.magric .col-1-2,.magric .col-1-2-fixed{width:50%;}
+.magric .offset-1-2{margin-left: 50%;}
+
+.magric .col-1-3,.magric .col-1-3-fixed{width:33.33%;}
+.magric .col-2-3,.magric .col-2-3-fixed{width:66.66%;}
+.magric .offset-1-3{margin-left: 33.33%;}
+.magric .offset-2-3{margin-left: 66.66%;}
+
+.magric .col-1-4,.magric .col-1-4-fixed{width:25%;}
+.magric .col-2-4,.magric .col-2-4-fixed{width:50%;}
+.magric .col-3-4,.magric .col-3-4-fixed{width:75%;}
+.magric .offset-1-4{margin-left: 25%;}
+.magric .offset-2-4{margin-left: 50%;}
+.magric .offset-3-4{margin-left: 75%;}
+
+.magric .col-1-5,.magric .col-1-5-fixed{width:20%;}
+.magric .col-2-5,.magric .col-2-5-fixed{width:40%;}
+.magric .col-3-5,.magric .col-3-5-fixed{width:60%;}
+.magric .col-4-5,.magric .col-4-5-fixed{width:80%;}
+.magric .offset-1-5{margin-left: 20%;}
+.magric .offset-2-5{margin-left: 40%;}
+.magric .offset-3-5{margin-left: 60%;}
+.magric .offset-4-5{margin-left: 80%;}
+
+.magric .col-1-6,.magric .col-1-6-fixed{width:16.66%;}
+.magric .col-2-6,.magric .col-2-6-fixed{width:33.33%;}
+.magric .col-3-6,.magric .col-3-6-fixed{width:50%;}
+.magric .col-4-6,.magric .col-4-6-fixed{width:66.66%;}
+.magric .col-5-6,.magric .col-5-6-fixed{width:83.33%;}
+.magric .offset-1-6{margin-left: 16.66%;}
+.magric .offset-2-6{margin-left: 33.33%;}
+.magric .offset-3-6{margin-left: 50%;}
+.magric .offset-4-6{margin-left: 66.66%;}
+.magric .offset-5-6{margin-left: 83.33%;}
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+	.magric{width:960px;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.magric{width:768px;}
+}
+
+@media only screen and (max-width: 767px) {
+	.magric, .magric .col-1-2, .magric .col-1-3, .magric .col-2-3, .magric .col-1-4, .magric .col-2-4, .magric .col-3-4, .magric .col-1-5, .magric .col-2-5, .magric .col-3-5, .magric .col-4-5, .magric .col-1-6, .magric .col-2-6, .magric .col-3-6, .magric .col-4-6, .magric .col-5-6{width:100%;}
+	
+	.magric .offset-1-2, .magric .offset-1-3, .magric .offset-2-3, .magric .offset-1-4, .magric .offset-2-4, .magric .offset-3-4, .magric .offset-1-5, .magric .offset-2-5, .magric .offset-3-5, .magric .offset-4-5, .magric .offset-1-6, .magric .offset-2-6, .magric .offset-3-6, .magric .offset-4-6, .magric .offset-5-6{margin-left:0;}
+}
